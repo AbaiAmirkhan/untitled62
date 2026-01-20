@@ -79,12 +79,12 @@ public class VetClinicMenu implements menu.Menu {
 
     private void makeAllSpeak() {
         System.out.println("\n--- ANIMALS SPEAK ---");
-        for(model.Animal a : allAnimals) a.makeSound(); // Polymorphism
+        for(model.Animal a : allAnimals) a.makeSound(); 
     }
 
     private void treatAllAnimals() {
         System.out.print("Enter treatment: ");
         String treatment = scanner.nextLine();
-        for(model.Animal a : allAnimals) a.receiveTreatment(treatment); // Polymorphism
+        for(model.Animal a : allAnimals) a.receiveTreatment(treatment); 
     }
 }
