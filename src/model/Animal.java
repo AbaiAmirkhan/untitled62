@@ -15,11 +15,11 @@ public abstract class Animal implements Treatable {
         this.vaccinated = vaccinated;
     }
 
-    // Abstract methods (children must implement)
+    
     public abstract void makeSound();
     public abstract String getType();
 
-    // Getters & setters with exceptions
+    
     public void setName(String name) throws InvalidInputException {
         if(name == null || name.trim().isEmpty()) throw new InvalidInputException("Name cannot be empty");
         this.name = name;
